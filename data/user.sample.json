@@ -1,0 +1,20 @@
+[
+    {
+        "id": "S8fs9jQ3",
+        "name": "nick",
+        "email": "nick@example.com",
+        "tier": "admin"
+    },
+    {
+        "id": "Q3J9d2j1",
+        "name": "lauren",
+        "email": "david@example.com",
+        "tier": "default"
+    },
+    {
+        "id": "Z3JnLm0s",
+        "name": "david",
+        "email": "david@example.com",
+        "tier": "alpha"
+    }
+]
