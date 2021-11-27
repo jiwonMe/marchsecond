@@ -7,6 +7,6 @@ esbuild.build({
   bundle: true,
   sourcemap: true,
   platform: 'node',
-  target: 'es2017',
+  target: 'esnext',
   watch: true
 })
