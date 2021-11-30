@@ -22,9 +22,14 @@ route.get('/:id', async (req: Request, res: Response) => {
 
 // create user
 route.post('/', async (req: Request, res: Response) => {
-  const user = new User(req.body)
-  await user.save()
-  res.send(user)
+  try {
+    const user = new User(req.body)
+    await user.save()
+    res.send(user)
+  } catch (e: any) {
+    console.log(e)
+    res.status(500).send({ message: e._message })
+  }
 })
 
 // update user
@@ -47,4 +52,4 @@ route.delete('/:id', async (req: Request, res: Response) => {
   }
 })
 
-export default Router
+module.exports = route

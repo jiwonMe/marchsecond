@@ -1,9 +1,6 @@
 const dotenv = require('dotenv')
 const express = require('express')
 const mongoose = require('mongoose')
-// const { customAlphabet } = require('nanoid')
-// const nanoid = customAlphabet(
-// '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', 10)
 dotenv.config() // Load .env file
 
 const app = express()
@@ -84,7 +81,9 @@ mongoose
 //   }
 // })
 
-app.user('/users', require('./routes/users'))
+app.use('/users', require('./routes/users'))
+
+app.use('/posts', require('./routes/posts'))
 
 app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${process.env.PORT || 2000}`)
