@@ -1,9 +1,7 @@
-import type { User } from './User'
-
 export interface Post {
-  url: string;
+  symbol: string;
   title: string;
   content: string;
   imagePath: string;
-  creator: User;
+  creator: string;
 }

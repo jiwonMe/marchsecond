@@ -81,9 +81,9 @@ mongoose
 //   }
 // })
 
-app.use('/users', require('./routes/users'))
+app.use('/user', require('./routes/users'))
 
-app.use('/posts', require('./routes/posts'))
+app.use('/post', require('./routes/posts'))
 
 app.listen(process.env.PORT, () => {
   console.log(`Server listening on port ${process.env.PORT || 2000}`)
