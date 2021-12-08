@@ -1,7 +1,7 @@
 import type { Post } from './Post'
 
 export interface Branch {
-  name: string;
+  symbol: string;
   head: Post;
   from: Post;
 }

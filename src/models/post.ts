@@ -6,7 +6,7 @@ const postSchema = new Schema<Post>({
   title: { type: String, required: true },
   content: { type: String, required: true },
   imagePath: { type: String },
-  creator: { type: Schema.Types.String, ref: 'User', required: true }
+  creator: { type: String, ref: 'User', required: true }
 }, {
   timestamps: true
 })
