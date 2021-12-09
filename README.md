@@ -3,5 +3,6 @@
 Headless CMS written in node.js
 
 ```
-npx create-march-second
+yarn install
+yarn start
 ```
